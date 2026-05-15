@@ -1,2 +1,6 @@
-ID_name,price,description_image,catagory,qty
-SP02,150000,image2.jpg,Phone,0
+id,name,price,quantity
+SP01,Bàn phím cơ,120,50
+SP02,Chuột không dây,45,120
+SP03,Màn hình 24inch,200,30
+SP04,Tai nghe Bluetooth,30,80
+SP05,Cáp HDMI,15,200
