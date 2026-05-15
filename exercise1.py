@@ -3,9 +3,9 @@ students = []
 
 for i in range(n):
     print(f"\nNhập thông tin sinh viên thứ {i+1}:")
-    student_id = input("Student ID: ")
-    full_name = input("Full name: ")
-    python_score = float(input("Python score: "))
+    student_id = input("Mã sinh viên: ")
+    full_name = input("Họ và tên: ")
+    python_score = float(input("Điểm môn Python: "))
     
     student = {
         "id": student_id,
@@ -16,7 +16,9 @@ for i in range(n):
 
 print("\n--- KẾT QUẢ ---")
 
-print("Tất cả sinh viên:", students)
+print("Danh sách tất cả sinh viên:")
+for s in students:
+    print(f"Mã sinh viên: {s['id']}, Họ và tên: {s['name']}, Điểm Python: {s['score']}")
 
 if students:
     max_student = max(students, key=lambda x: x['score'])
@@ -26,4 +28,4 @@ if students:
     print(f"Điểm trung bình: {avg_score:.2f}")
 
     passed_students = [s['name'] for s in students if s['score'] >= 5]
-    print("Danh sách sinh viên đạt (score >= 5):", passed_students)
+    print("Danh sách sinh viên thi đỗ (score >= 5):", passed_students)
