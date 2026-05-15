@@ -3,14 +3,14 @@ import pandas as pd
 data = {
     'id': ['SP01', 'SP02', 'SP03', 'SP04', 'SP05'],
     'name': ['Bàn phím cơ', 'Chuột không dây', 'Màn hình 24inch', 'Tai nghe Bluetooth', 'Cáp HDMI'],
-    'price': [120, 45, 200, 30, 15], 
+    'price': [120, 45, 2000, 300, 150], 
     'quantity': [50, 120, 30, 80, 200]
 }
 
 df = pd.DataFrame(data)
 
 df.to_csv('products.csv', index=False)
-print("Đã lưu file products.csv thành công.")
+print("Đã lưu dữ liệu thành công ra file: 'products.csv'\n")
 
 df_read = pd.read_csv('products.csv')
 
