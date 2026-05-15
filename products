@@ -1,0 +1,6 @@
+ID_name,price,description_image,catagory,qty
+SP01, 100000,image1.jpg,Phone,5
+SP02,150000,image2.jpg,Phone,0
+SP03,12000000,image3.jpg,Computer,2
+SP04,15000000,image4.jpg,Computer,3
+SP05,30000000,image5.jpg,Computer,1
